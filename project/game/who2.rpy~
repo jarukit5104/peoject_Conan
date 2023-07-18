@@ -1,0 +1,267 @@
+                label who2:
+                    $ end_y = 1
+                    $ end_y += 2
+                    v "{cps=10}อะไรนะ (พร้อมหน้าตกใจ){/cps}"
+                    show chr_e3 at right
+                    t "{cps=10}ทำไมเป็นผมล่ะ แล้วก็ผมโดนคนร้ายเล็งยิงลูกธนูด้วย{/cps}"
+                    hide chr_e3 at right
+                    c "{cps=10}เพราะว่าสันนิษฐานของที่ผมบอกว่าจะมีคนขอทำ cpr เป็นคนแรกก็คือคุณไงล่ะ{/cps}"
+                    c "{cps=10}ส่วนที่คุณโดนลูกธนูยิงนั้นแค่การจัดฉากเพื่อไม่ให้มีคนมาสงสัยคุณแค่นั้น แล้วจังหวะโดนยิงเหมือนคุณจงใจด้วย{/cps}"
+                    show chr_e3 at right
+                    t "{cps=10}แล้วผู้ช่วยของคุณก็คนร้ายได้นะ{/cps}"
+                    hide chr_e3 at right
+                    c "{cps=10}เหตุผลง่ายๆคือ คุณที่ทำกระป๋องน้ำตกในช่วงที่มีการฆ่านานะแล้วเป็นที่คนร้ายทำน้ำกระป๋องตกก็คุณเดียวไงล่ะ{/cps}"
+                    show chr_e3 at right
+                    t  "{cps=10}ผมอาจทำอย่างอื่นตกก็ได้นะครับ{/cps}"
+                    hide chr_e3 at right
+                    c "{cps=10}ถ้างั้นก็ได้ยินเสียงสิแต่ก็ไม่ได้เสียงแก้วน้ำหรืออะไรตก ยกเว้นกระป๋องน้ำเท่านั้น{/cps}"
+                    show chr_e3 at right
+                    t  "{cps=10}งั้นทำไมผมต้องฆ่าพวกเขาด้วย{/cps}"
+                    hide chr_e3 at right
+                    c  "{cps=10}เหตุผลที่ฆ่าพวกเขาคือ โรครับรสสัมผัสบกพร่อง{/cps}"
+                    show chr_l13 at left
+                    u "{cps=10}โรครับรสสัมผัสบกพร่อง??{/cps}"
+                    hide chr_l13 at left
+                    show chr_a2 
+                    b "{cps=10}คืออาการที่ต่อมรับรสชาติที่กินหรือดื่มเข้าไปในปากแล้วไม่รู้รสชาติ{/cps}"
+                    show chr_a3
+                    hide chr_a2
+                    c "{cps=10}ใช่ครับ โรคนั้นเกิดมาจากความเครียดหรือได้กระทบกับสมองอย่างหนัก{/cps}"
+                    show chr_f12 at left
+                    j "{cps=10}แล้วเขารู้ยี่ห้อไวน์ของนานะมายังได้ไง{/cps}"
+                    hide chr_f12 at left
+                    c "{cps=10}ก็เพราะเขารู้ดมและดูสีไวน์ก็รู้ยี่ห้อของไวน์แล้ว แต่ว่าเขาต้องการที่ผู้เชี่ยญชาญไวน์ที่สมบูรณ์แบบ
+                    แต่ว่าคุณนานะไม่ก็คุณไบซู ไปทำอะไรสักอย่างที่ทำให้เขารับรสไม่ได้{/cps}"
+                    c "{cps=10}ส่วนคุณเนด้งย่ง ทำให้เขาเครียดเกี่ยวกับการรับรสไวน์แบบผิดๆ
+                    แล้วมาทำหนังสือวิจารณ์เรื่องไวน์ แบบผิดๆ{/cps}"
+                    show chr_a2
+                    hide chr_a3
+                    b "{cps=10}ทำให้เขาทิ้งอาชีพนี้ไปแล้วออกจากตัวเมืองไปยังบ้านนอกเพื่อบั้นปลายชีวิตของ 
+                      แต่ว่าก่อนจะออกไปอยู่บ้านนอกเขาเลยแก้แค้นโดยการฆ่าพวกเขาที่ทำให้เขาเสียการรับรสสัมผัสนี้ไป{/cps}"
+                    show chr_a3
+                    hide chr_a2
+                    show chr_e3 at right
+                    t  "{cps=10}ถ้าเป็นงั้นจริงก็มีหลักฐานไหมล่ะ{/cps}"
+                    hide chr_e3 at right
+                    c "{cps=10}ก็มีครับก็ไพ่เลข1-3หรือของที่นานะทิ้งไว้ในตัวคุณ ไงล่ะ{/cps}"
+                    show chr_e3 at right
+                    t "{cps=10}แล้วอยู่ไหน{/cps}"
+                    hide chr_e3 at right
+                    hide chr_a3
+                    
+                    label shrit:
+                          menu : 
+                                c"   "
+                                "หัวจุกไวน์":
+                                    jump shrit1
+                                "ไพ่ที่ตรงที่เสื้อใน":
+                                    jump shrit2
+                                "ไพ่ที่ตรงกางเกง":
+                                    jump shrit3
+                    
+                    label shrit1:
+                        $ renpy.music.stop(channel="sound_effect")
+                        $ renpy.music.queue("audio/chr3.mp3", channel="sound_effect")
+                        show chr_e3 at right
+                        t "{cps=10}ก็มีหัวจุกไวน์เอง{/cps}"
+                        hide chr_e3 at right
+                        c  "{cps=10}แต่ว่าหัวจุกไวน์ของนานะที่ทาเล็บเล่นกับหัวจุกนี่ทำไมอยู่ที่คุณกัน{/cps}"
+                        show chr_e3 at right
+                        t "{cps=10}ช่วยไม่ได้นะ{/cps}"
+                        hide chr_e3 at right
+                        show gwine
+                        ""
+                        hide gwine
+                        show chr_f12 at left
+                        j "{cps=10}ทำไมคุณถึงต้องฆ่าพวกเขากัน{/cps}"
+                        hide chr_f12 at left
+                        show chr_e3 at right
+                        t "{cps=10} เพราะว่าคุณนานะเลี้ยวรถชนกับมอเตอร์ไซต์ที่ผมขับอยู่ทำให้ผมล้มหัวกระแทกพื้นผ่านหมวกกันน็อคจนผมรับรสไม่ได้ {/cps}"
+                        t "{cps=10}ส่วนคิวจู ก็จะซื้อไวน์หายากทั่วประเทศทั้งหมดแต่ว่าเก็บรักษาคุณภาพไวน์ก็ไม่เป็น แล้วยังมีหน้ามาอวดรู้อีก โครตแย่ถึงขีดสุด{/cps}"
+                        t "{cps=10}ส่วนเนด้งย่งก็ตามที่คุณ%(c)s  พูดทั้งหมด และระเบิดทั้งหมดที่นี่แล้วฆ่าคุณเนด้งย่งไงล่ะ{/cps}"
+                        hide chr_e3 at right
+                        show chr_b2 at right
+                        g "{cps=10}ถึงขั้นฆ่ากันเลยเหรอ{/cps}"
+                        show chr_e4 at right
+                        hide chr_b2 at right
+                        t "{cps=10}ใช่เลย ส่วนของจูโคโร่ อาคายุย แค่บังเอิญแล้วฟังเรื่องราวของคุณอิจิ โซมะที่เป็นเพื่อนสมัยเด็ก 
+                        และนำประโยชน์จากเลขไพ่และคุณอิจิ โซมะเป็นความผิดของพวกเขาไงล่ะ {/cps}"
+                        hide chr_e4 at right
+                        c  "{cps=10}ยาสุโอะ สารวัตรทาเครุไปจับเขาเร็ว{/cps}"
+                        show chr_f12 at left
+                        j "{cps=10}ทำไมรีบจับเขาล่ะ เพราะยอมแล้วนิ{/cps}"
+                        hide chr_f12 at left
+                        show chr_a2
+                        b "{cps=10}ก็เขาจะระเบิดที่นี่อีกรอบนึงไงล่ะ{/cps}"
+                        show chr_e4
+                        hide chr_a2
+                        t "{cps=10}ช้าไป ปุ๊ป{/cps}"
+                        hide chr_e4
+                        "บูมมม"
+                        v "{cps=10}เกิดอะไรขึ้น!{/cps}"
+                        jump show1
+                    
+                    label shrit2:
+                        $ renpy.music.stop(channel="sound_effect")
+                        $ renpy.music.queue("audio/chr3.mp3", channel="sound_effect")
+                        show 1 
+                        show 2 at left
+                        show 3 at right
+                        ""
+                        hide 1
+                        hide 2 at left
+                        hide 3 at right
+                        show chr_e4 at right
+                        t "{cps=10}จริงๆด้วย เลขไพ่1-3{/cps}"
+                        t "{cps=10}ช่วยไม่ได้นะ{/cps}"
+                        hide chr_e4 at right
+                        show chr_f12 at left
+                        j "{cps=10}ทำไมคุณถึงต้องฆ่าพวกเขากัน{/cps}"
+                        hide chr_f12 at left
+                        show chr_e4 at right
+                        t "{cps=10} เพราะว่าคุณนานะเลี้ยวรถชนกับมอเตอร์ไซต์ที่ผมขับอยู่
+                        ทำให้ผมล้มหัวกระแทกพื้นผ่านหมวกกันน็อคจนผมรับรสไม่ได้ {/cps}"
+                        t "{cps=10}ส่วนคิวจู ก็จะซื้อไวน์หายากทั่วประเทศทั้งหมดแต่ว่าเก็บรักษาคุณภาพไวน์ก็ไม่เป็น แล้วยังมีหน้ามาอวดรู้อีก โครตแย่ถึงขีดสุด{/cps}"
+                        t "{cps=10}ส่วนเนด้งย่งก็ตามที่คุณ%(c)s  พูดทั้งหมด และระเบิดทั้งหมดที่นี่แล้วฆ่าคุณเนด้งย่งไงล่ะ{/cps}"
+                        hide chr_e4 at right
+                        show chr_b2 at right
+                        g "{cps=10}ถึงขั้นฆ่ากันเลยเหรอ{/cps}"
+                        show chr_e4  at right
+                        hide chr_b2 at right
+                        t "{cps=10}ใช่เลย ส่วนของจูโคโร่ อาคายุย แค่บังเอิญแล้วฟังเรื่องราวของคุณอิจิ โซมะที่เป็นเพื่อนสมัยเด็ก 
+                        และนำประโยชน์จากเลขไพ่และคุณอิจิ โซมะเป็นความผิดของพวกเขาไงล่ะ {/cps}"
+                        hide chr_e4  at right
+                        c  "{cps=10}ยาสุโอะ สารวัตรทาเครุไปจับเขาเร็ว{/cps}"
+                        show chr_f12 at left
+                        j "{cps=10}ทำไมรีบจับเขาล่ะ เพราะยอมแล้วนิ{/cps}"
+                        hide chr_f12 at left
+                        show chr_a2
+                        b "{cps=10}ก็เขาจะระเบิดที่นี่อีกรอบนึงไงล่ะ{/cps}"
+                        show chr_e4
+                        hide chr_a2
+                        t "{cps=10}ช้าไป ปุ๊ป{/cps}"
+                        hide chr_e4
+                        "บูมมม"
+                        v "{cps=10}อะไรเกิดขึ้น!{/cps}"
+                        jump show1
+                        
+                    label shrit3:
+                        show chr_e4 at right
+                        t "{cps=10}ไม่มีไพ่ที่คุณบอกนะ แต่มีระเบิดอีกอันนึงไงล่ะ ปุ๊ป{/cps}"
+                        hide chr_e4 at right
+                        "บูมมม"
+                        v "{cps=10}อะไรเกิดขึ้น!{/cps}"
+                        jump show1
+                    
+                    label show1:
+                        show chr_h13 at left
+                        o "{cps=10}หยุดเลยค่ะคุณจิกิตะ (จ่อปืนใส่คุณจิกิตะ){/cps}"
+                        hide chr_h13 at left
+                        show chr_f12 at left
+                        j "{cps=10}เสร็จกัน (พร้อมหยิบปืนจ่อใส่คุณจิกิตะ){/cps}"
+                        "{cps=10}%(c)s  และ ยาสุโอะ ก็เอาหยิบปืนจ่อใส่จิกิตะเช่นกัน{/cps}"
+                        hide chr_f12 at left
+                        show chr_e4 at right
+                        t "{cps=10}หยุด! อย่าขยับ เดี๋ยวไม่นั่นผู้ช่วยเซฟของแกตายแน่!!{/cps}"
+                        hide chr_e4 at right
+                        show chr_f12 at left
+                        j "{cps=10}หยิบปืนมาที่นอกทำงานด้วยเหรอ(กระซิบ){/cps}"
+                        hide chr_f12 at left
+                        show chr_h13 at left
+                        o "{cps=10}หนูเอามาป้องกันตัวค่ะ(กระซิบ){/cps}"
+                        hide chr_h13 at left
+                        show chr_f12 at left
+                        j "{cps=10}หยิบปืนมาแล้วยิงแม่นเหรอ(กระซิบ){/cps}"
+                        hide chr_f12 at left
+                        show chr_h13 at left
+                        o "{cps=10}ไม่ค่ะ(กระซิบ){/cps}"
+                        hide chr_h13 at left
+                        show chr_f12 at left
+                        j "{cps=10}แล้วหยิบปืนทำไมถ้ายิงไม่แม่นเพื่อ!{/cps}"
+                        hide chr_f12 at left
+                        show chr_e4 at right
+                        t "{cps=10}วางปืนซะทุกคน!"
+                        hide chr_e4 at right
+                        show chr_f2 at right
+                        j "{cps=10}ช่วยไม่ได้สินะ (วางปืนลงพื้น){/cps}"
+                        hide chr_f2 at right
+                        show chr_h13 at left
+                        o "{cps=10}ค่ะ (วางปืนลงพื้น){/cps}"
+                        hide chr_h13 at left
+                        show chr_e4 at right
+                        t "{cps=10}อีกสองคนยังไม่วางปืนลงอีก!{/cps}"
+                        hide chr_e4 at right
+                
+                        label fire5:
+                            menu : 
+                                c"   "
+                                "ยิงแบบใจร้อน":
+                                    jump fire3
+                                "ยิงแบบใจเย็น":
+                                    jump fire4
+    
+                        label fire3:
+                            c "ปัง"
+                            "{cps=10}โดมะล้มตายลง{/cps}"
+                            show chr_a2
+                            b "{cps=10}ทำอะไร %(c)s (ปัง) {/cps}"
+                            show chr_a3
+                            hide chr_a2
+                            show chr_e4 at right
+                            t "{cps=10}อ๊ากขาฉัน{/cps}"
+                            hide chr_e4 at right
+                            show chr_f12 at left
+                            j "{cps=10}ดีล่ะ ไม่ตัวประกันแล้ว คุณมาอาระไปจับตัวคุณจิกิตะซะ ส่วนผมไปเอามีดจากเขา{/cps}"
+                            hide chr_f12 at left
+                            show chr_h13 at left
+                            o "ค่ะ"   
+                            hide chr_h13 at left
+                            scene ocean
+                            "{cps=10}หลังจากนั้นสารวัตรทาเครุกับมาอาระได้จับคุณจิกิตะลงกับพื้น{/cps}"
+                            c " {cps=10}หลังจากนั้นก็ว่ายน้ำถึงที่เกาะวัสดุลอยน้ำอยู่เพื่อรอเรือตำรวจมารับก็จบงานแล้ว{/cps}"
+                            show chr_a2
+                            b "{cps=10}แต่คุณเข้าคุก 1 ปีโดยที่คุณยิงตัวประกันจนตาย{/cps}"
+                            hide chr_a2
+                            c "{cps=10}ม่ายยยย ยาสุโอะ ช่วยด้วย!{/cps}"
+                            $ end_y += 2
+                            scene gery
+                            image n3 = Text("นักสืบสามารถนำหลักฐานที่ค้นพบและการสนทนากับผู้เข้าข่ายต้องสงสัย\nจนนำเรื่องราวทั้งหมดมาป่ะติดป่ะต่อกัน จนทราบเรื่องราวทั้งหมด\nทำให้สามารถจับกุมตัว%(t)sได้ในที่สุด\nแต่นักสืบได้ทำพลาด เพราะความใจร้อนเกินไปจนทำให้ตัวประกันเสียชีวิต"
+                                 , color="#ffde2c", size=24, xpos=0.5, ypos=0.5)
+                            show n3
+                            ""
+                            hide n3
+                            "normal end" 
+                            
+                            jump end
+                        label fire4:   
+                            c " ปัง"
+                            "{cps=10}โดมะล้มลงเนื่องจากได้โดนยิงที่ขา{/cps}"
+                            show chr_a2
+                            b "{cps=10}ทำอะไร %(c)s {/cps}"
+                            hide chr_a2
+                            show chr_e4 at right
+                            t "{cps=10}เฮ้ยเฮ้ยเฮ้ย ลุกขึ้นมา{/cps}"
+                            hide chr_e4 at right
+                            show chr_f12 at left
+                            j "{cps=10}ดีล่ะ ไม่ตัวประกันแล้ว คุณมาอาระไปจับตัวคุณจิกิตะซะ ส่วนผมไปเอามีดจากเขา{/cps}"
+                            hide chr_f12 at left
+                            show chr_h13 at left
+                            o "ค่ะ" 
+                            hide chr_h13 at left
+                            scene ocean
+                            "{cps=10}หลังจากนั้นสารวัตรทาเครุกับมาอาระได้จับคุณจิกิตะลงกับพื้น{/cps}"
+                            c " {cps=10}หลังจากนั้นก็ว่ายน้ำถึงที่เกาะวัสดุลอยน้ำอยู่เพื่อรอเรือตำรวจมารับก็จบงานแล้ว{/cps}"
+                            show chr_a2
+                            b "{cps=10}แต่คุณต้องไปจ่ายค่าปรับ โดยที่คุณยิงตัวประกัน{/cps}"
+                            hide chr_a2
+                            c "{cps=10}ม่ายย ตังฉัน!{/cps}"
+                            $ end_y += 3
+                            scene gery
+                            image n4 = Text("นักสืบสามารถนำหลักฐานที่ค้นพบและการสนทนากับผู้เข้าข่ายต้องสงสัย\nจนนำเรื่องราวทั้งหมดมาป่ะติดป่ะต่อกัน จนทราบเรื่องราวทั้งหมด\nทำให้สามารถจับกุมตัว%(t)sได้ในที่สุด \nและด้วยความใจเย็นของนักสืบ จึงทำให้ไม่มีใครเสียชีวิตเพิ่มเติม"
+                                 , color="#ffde2c", size=24, xpos=0.5, ypos=0.5)
+                            show n4
+                            ""
+                            hide n4
+                            "good end"
+                            
+                            jump end

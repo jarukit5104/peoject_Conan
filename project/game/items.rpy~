@@ -1,0 +1,13 @@
+screen Firstitem() :
+    imagebutton:
+        xalign 0.5
+        yalign 1.0 
+        idle "sofa"
+        action Jump("item1")
+        
+        
+        
+        "hello"
+   call screen Firstitem
+label item1:
+    "key"

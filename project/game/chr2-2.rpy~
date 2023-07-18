@@ -1,0 +1,268 @@
+label ser8:
+                c "{cps=10}(เหลือใครที่ยังไม่ได้สอบถามข้อมูล อยู่รึเปล่านะ){/cps}"
+                c "{cps=10}ยาสุโอะไปหา จูโคโร่ อาคายุย ว่าอยู่ที่นี้ไหม{/cps}"
+                show chr_a2
+                b "{cps=10}ได้ครับ ผมจะรีบตามหาเดี๋ยวนี้ครับ{/cps}"
+                hide chr_a2
+                "{cps=10}ผู้ช่วยนักสืบ ยาสุโอะ ได้ออกจากกลุ่มเพื่อไปหา คุณจูโคโร่ อาคายุย ที่คาสิโน{/cps}"
+                show chr_j1 at right
+                n "{cps=10}ใช่ๆเพื่อฆ่าเวลาเนด้งย่ง โดเซบ้า มาท้าสู้ซะ{/cps}"
+                show chr_i12 at left
+                hide chr_j1 at right
+                f "{cps=10}ท้าสู้อะไรเหรอ ทำไมเกลียดผมเพราะผมมองคุณนานเกินไปงั้นเหรอ{/cps}"
+                show chr_i13 at left
+                hide chr_i12 at left
+                show chr_j1 at right
+                n "{cps=10}ไม่ใช่เลย แต่มันเพราะวันนั้นฉันไปชิมไวน์ตามที่นายบอกไว้หนังสือที่นายเขียน{/cps}"
+                n "{cps=10}สรุปคือรสชาติไม่ตรงตามที่เขียนไว้เลยสักนิด เลยว่าวันนี้มาคำท้าชิมไวน์ว่าเป็นไวน์ยี่ห้ออะไร{/cps}"
+                show chr_i12 at left
+                hide chr_i13 at left
+                show chr_j3 at right
+                hide chr_j1 at right
+                f "{cps=10}ได้มาดูว่าใครเป็นนักชิมที่ถูกต้องกว่ากัน{/cps}"
+                hide chr_i12 at left
+                show chr_i13 at left
+                hide chr_j3 at right
+                show chr_j1 at right
+                n "{cps=10}งั้นฉันนั่งทาเล็บรอก่อนนะเพราะเลขาให้ยาทาเล็บที่ดี มาให้ฉันด้วย เลยอยากลองทาเล็บดู{/cps}"
+                show gwine
+                $ f5 == True
+                "{cps=10}หลังจากเนด้งย่ง โดเซบ้ารับคำท้าของ ซิโรริ นานะ ยกไวน์ที่เตรียมไว้มาเพื่อเนด้งย่ง โดเซบ้าให้ชิม 
+                    แล้วหยิบยาทาเล็บเพื่อรอเนด้งย่ง โดเซบ้าชิมไวน์เสร็จ{/cps}"
+                hide gwine
+                show chr_i12 at left
+                hide chr_i13 at left
+                show chr_j3 at right
+                hide chr_j1 at right
+                f "{cps=10}อืม กลิ่นอย่างละมุด และ เบาบางอย่างกระดาษ คงเป็นยี่ห้อ Screaming Eagle Cabernetสินะ{/cps}"
+                hide chr_i12 at left
+                show chr_i13 at left
+                hide chr_j3 at right
+                show chr_j1 at right
+                n "{cps=10}ผิด ห่างใกล้ความจริงไปเยอะเลย นี้ไงนักวิจารณ์เรื่องไวน์  มั่วสิ้นดี สภาพอย่างงี้ออกจากวงการนักชิมไปเลย{/cps}"
+                show chr_i11 at left
+                hide chr_i13 at left
+                show chr_j3 at right
+                hide chr_j1 at right
+                f  "{cps=10}ทำไมไม่ใช่ ยี่ห้อ Screaming Eagle Cabernet เธอมั่วใช่ไหม{/cps}"
+                hide chr_i11 at left
+                show chr_i13 at left
+                hide chr_j3 at right
+                show chr_j1 at right
+                n "{cps=10}ถ้างั้นคุณจิกิตะ ฮาจิโตะเป็นผู้เชี่ยวชาญด้านไวน์ใช่ไหม แสดงการชิมไวน์ให้เขาดูสิว่านักชิมที่แท้จริงเป็นยังไง{/cps}"
+                "{cps=10}หลังจากจิกิตะ ฮาจิโตะ ชิม และดมกลิ่น ดูไวน์ อย่างละเอียดลออ{/cps}"
+                show chr_e12 at left
+                hide chr_i13 at left
+                show chr_j3 at right
+                hide chr_j1 at right
+                t "{cps=10}คงเป็น Chateau Margaux 1875 สินะ{/cps}"
+                hide chr_e12 at left
+                show chr_e13 at left
+                hide chr_j3 at right
+                show chr_j1 at right
+                n "{cps=10}สมแล้วที่เป็นผู้เชี่ยวชาญด้านไวน์{/cps}"
+                show chr_i11 at left
+                hide chr_e13 at left
+                show chr_j3 at right
+                hide chr_j1 at right
+                f "{cps=10}บ้าน่า ทำไมเป็นChateau Margaux 1875 ล่ะ{/cps}"
+                hide chr_j3 at right
+                show chr_e11 at left
+                hide chr_i11 at left
+                t "{cps=10}ก็เพราะที่คุณพูดถูกเกือบหมด 
+                แต่ว่าสีและกลิ่นแตกต่างที่คุณเห็นเล็กน้อย 
+                ไวน์นี้มีกลิ่นที่ไม่เบามากมีความหนักของไวน์ด้วย{/cps}"
+                hide chr_e11 at left
+                show chr_i11 at left
+                f "{cps=10}ฉันไม่ยอมรับหรอกน่า ฉันคือผู้วิจารณ์เรื่องไวน์ขั้นเทพ{/cps}"
+                hide chr_i11 at left
+                show chr_e11 at left
+                t "{cps=10}คนโง่ ก็มักไม่ยอมรับว่าตัวเองโง่{/cps}"
+                hide chr_e11 at left
+                show chr_i11 at left
+                f "{cps=10}แก ! ! ! !{/cps}"
+                hide chr_i11 at left
+                "{cps=10}หลังจากท้าสู้ของพวกเขาเสร็จ ก็ใช้เวลาสักพักในการทำให้เนด้งย่ง โดเซบ้า สงบสติอารมณ์ลง และ ซิโรริ นานะ ได้นำหัวจุกไวน์ที่ทาสี ทาเล็บใส่ไว้ในเสื้อนอก แ
+                แล้วขณะเดียวกัน ผู้ช่วย ยาสุโอะ ก็ได้กลับมาหลังตามหา จูโคโร่ อาคายุย{/cps}"
+                show chr_a2
+                b "{cps=10}%(c)s มีอะไรจะบอกครับ{/cps}" 
+                hide chr_a2
+                show chr_a3
+                c "{cps=10}แล้วเจอคุณจูโคโร่ อาคายุยที่น่าจะเป็นคนร้ายไหม{/cps}"
+                hide chr_a3
+                show chr_a2
+                b "{cps=10}ไม่เจอครับ  แต่ว่าผมรู้สึกแปลกๆ ว่าที่นี่ไม่มีใครอยู่สักคนเลยครับ{/cps}"
+                hide chr_a2
+                show chr_a3
+                c "{cps=10}เป็นไปไม่ได้อควาเรียมไมมีใครอยู่เลยเหรอ แล้วเลขาของ คุณคิวจู โดมะล่ะ{/cps}"
+                hide chr_a3
+                show chr_a2
+                b "{cps=10}ไม่อยู่ครับ{/cps}"
+                hide chr_a2
+                show chr_a3
+                c "{cps=10}อย่าบอกนะว่า ยาสุโอะไปเปิดประตูลิฟท์เร็ว{/cps}"
+                hide chr_a3
+                show chr_a2
+                b "{cps=10}ได้เลยครับ{/cps}"
+                hide chr_a2
+                show chr_a3
+                show chr_l14 at left
+                u "{cps=10}เกิดอะไรขึ้น คุณ %(c)s{/cps}"
+                show chr_l13 at left
+                hide chr_l14 at left
+                c "{cps=10}ในคาดเดาของผม พวกเราโดนขังที่ใต้อควาเรียมแล้วล่ะครับ{/cps}"
+                hide chr_l13 at left
+                hide chr_a3
+                v "{cps=10}อะไรนะ! พวกเราโดนขังที่นี่เหรอ{/cps}"
+                show chr_a2
+                b "{cps=10}เอ่อ ทุกคนครับผมคิดว่าประตูลิฟท์ปิดโดยจากมีคนทำวงจรในลิฟท์เสียทำให้ใช้งานไม่ได้ครับ{/cps}"
+                hide chr_a2
+                show chr_a3
+                show chr_j1 at right
+                n "{cps=10} อะไรนะ! จะติดอยู่ที่นี่จริงนะเหรอ{/cps}"
+                show chr_b1 at right
+                hide chr_j1 at right
+                g "{cps=10}ไม่เอานะ! ฉันยังไม่อยากตาย{/cps}"
+                show chr_h4 at right
+                hide chr_b1 at right
+                o "{cps=10}ใจเย็นนะนานะซังกับ ชิโกะจัง{/cps}"
+                show chr_c14 at left
+                hide chr_h4 at right
+                s "{cps=10}ผมว่าใจเย็นไม่ได้แล้วคุณมาอาระ{/cps}"
+                hide chr_c14 at left
+                show chr_h4 at right
+                o "{cps=10}ทำไมใจเย็นไม่ได้ล่ะ{/cps}"
+                show chr_c14 at left
+                hide chr_h4 at right
+                m "{cps=10}เพราะว่าหัวหน้าของผมเห็นคนนอกอควาเรียมน่ะสิครับ{/cps}"
+                hide chr_c14 at left
+                show chr_f12 at left
+                j "{cps=10}ว่าไงนะ!{/cps}"
+                hide chr_f12 at left
+                scene ocean6
+                show chr_l14 at left
+                u "{cps=10}เดี๋ยวก่อนนะ นั่นไม่ใช่คุณคิวจู โดมะ เหรอ{/cps}"
+                hide chr_l14 at left
+                hide chr_a3
+                "{cps=10}นอกกระจกของอควาเลี่ยม เห็นคิวจู โดมะ ตายนอกกระจกของอควาเลี่ยม พร้อมเลข 9 กับ ไพ่โจ๊กเกอร์ ที่ลอยออกมาจากกระเป๋าเสื้อ ของ คิวจู โดมะ{/cps}"
+                l "{cps=10}กรี๊ดดดด{/cps}"
+                show chr_i14 at left
+                f "{cps=10}นี่มันอะไรเนี่ย ! {/cps}"
+                show chr_f12 at left
+                hide chr_i14 at left
+                j "{cps=10}เดี๋ยวนะ ทำไมคนร้ายฆ่าคิวจู โดมะที่เป็นเลข 9 ล่ะ แล้วจูโคโร่ อาคายุยล่ะ{/cps}"
+                hide chr_f12 at left
+                show chr_a2
+                b "{cps=10}แปลว่าคนร้ายเป็นจูโคโร่ อาคายุย จริงสินะ ถึงได้ฆ่าคิวจู โดมะ ก่อน แต่ว่าจูโคโร่ อาคายุยอยู่ที่ไหน{/cps}" 
+                hide chr_a2
+                c "{cps=10}จูโคโร่ อาคายุยน่าจะยังอยู่ไม่ไกลสินะ
+                แต่ก่อนอื่นก็ให้ทุกคนหาทางออกเพื่อหนีจากจูโคโร่ อาคายุยก่อน{/cps}"
+                show chr_f12 at left
+                j "{cps=10}งั้นพวกผู้ชายแยกย้ายตามหาทางออกดีกว่า ส่วนพวกผู้หญิงอยู่ตรงนี้กันก่อนนะครับ{/cps}"
+                hide chr_f12 at left
+                l  "{cps=10}เข้าใจแล้ว {/cps}" 
+                
+                scene ocean2
+                "{cps=10}บรรดานักสืบกับตำรวจและผู้ชายที่ได้รับเชิญแยกย้ายกันตามหาทางออก{/cps}"
+                c "{cps=10}ประตูห้องเก็บไวน์ล็อกเหรอ แล้วกุญแจล่ะ ทุกคนเจอทางออกไหม{/cps}"
+                show chr_l14 at left
+                u "{cps=10}ไม่เจอเลยครับ{/cps}"
+                hide chr_l14 at left
+                show chr_a2
+                b "{cps=10}เจอประตูทางออกครับ แต่โดนอะไรไม่รู้ของอีกฟากหนึ่งของประตูทำให้เปิดไม่ได้ครับ{/cps}"
+                show chr_f12 at left
+                show chr_a3
+                hide chr_a2
+                j "{cps=10}ไม่เจอทางอื่นเลย{/cps}"
+                hide chr_f12 at left
+                show chr_i11 at left
+                f "{cps=10}ไม่เจอเลยครับ{/cps}"
+                hide chr_i11 at left
+                show chr_e13 at left
+                t "{cps=10}ทางประตูห้องครัวก็ปิดเหมือนกัน{/cps}"
+                hide chr_e13 at left
+                show chr_e12 at left
+                c "{cps=10}งั้นแสดงว่าไม่มีทางออกสินะ{/cps}"
+                c " {cps=10}(เดี๋ยวก่อนนะ ทำไมจูโคโร่ อาคายุยที่เป็นคนร้ายต้องขังตัวเองด้วย){/cps}"
+                show chr_h3 at right
+                o "{cps=10}สารวัตรทาเครุค่ะ มีจดหมายของคิวจู โดมะที่ส่งถึงจิกิตะ ฮาจิโตะ ที่โต๊ะที่เราคุยกันค่ะ{/cps}"
+                show chr_h4 at right
+                hide chr_h3 at right
+                show chr_a2
+                hide chr_a3
+                b "{cps=10}เดี๋ยวนะตรงโต๊ะก็ไม่มีอะไรนอกจากหัวจุกไวน์กับไวน์ที่ซิโรริ นานะ วางไว้อย่างเดียวสิ{/cps}"
+                show chr_a3
+                hide chr_a2
+                hide chr_e12 at left
+                show chr_l13 at left
+                u "{cps=10}อ๋อ นั้นเป็นจดหมายที่อยู่ตรงหน้าเคาน์เตอร์ ที่วางไว้ ผมเผลอหยิบมานะ{/cps}"
+                hide chr_l13 at left
+                show chr_e13 at left
+                t "{cps=10}ถึงผมสินะ ขอในดูจดหมายหน่อย{/cps}"
+                show chr_h2 at right
+                hide chr_h4 at right
+                hide chr_e13 at left
+                o "{cps=10}ได้ค่ะ{/cps}" 
+                "{cps=10}หลังจากจิกิตะ ฮาจิโตะ อ่านจดหมายเสร็จ{/cps}"
+                hide chr_h2 at right
+                hide chr_a3
+                show chr_a2
+                b "{cps=10}จิกิตะ ฮาจิโตะ เขาเขียนอะไรในจดหมาย{/cps}"
+                hide chr_a2
+                show chr_a3
+                show chr_e13 at left
+                t "{cps=10} ไม่มีอะไรครับแค่ให้กุญแจห้องเก็บไวน์มาเปิดห้องเก็บไวน์เพื่อเอาไวน์ที่ตำแหน่งที่เขาบอกมานะครับ{/cps}"
+                show chr_h2 at right                                     
+                hide chr_e13 at left
+                o "{cps=10} หนูสนใจไวน์เหมือนกันอยากดูห้องเก็บไวน์ด้วย{/cps}"
+                hide chr_h2 at right
+                hide chr_a3
+                show chr_a2
+                b "{cps=10}เช่นกัน{/cps}"
+                hide chr_a2
+                show chr_a3
+                show chr_l13 at left
+                u "{cps=10}ผมด้วย สนใจห้องเก็บไวน์ว่ามีเยอะแค่ไหน{/cps}"
+                hide chr_l13 at left
+                show chr_f12 at left
+                j "{cps=10}ผมด้วย{/cps}" 
+                hide chr_f12 at left
+                c "{cps=10}ผมไม่สน แต่ผมต้องตามคุณไปเพราะว่าคุณอาจเป็นคนต่อไปที่โดนฆ่า{/cps}"
+                show chr_e13 at left
+                t "{cps=10} งั้นก็พวกคุณที่สนใจ ก็มากับผม ส่วนคนที่เหลือก็รออยู่ตรงนี้นะครับ{/cps}"
+                hide chr_a3
+                hide chr_e13 at left
+                
+                scene wine
+                "{cps=10}ห้องเก็บไวน์{/cps}"
+                "{cps=10}แก๊ก แก๊ก{/cps}"
+                show chr_e13 at left
+                t "{cps=10}โอเคนี่คือห้องเก็บไวน์นะครับทุกคน{/cps}"
+                show chr_h4 at right
+                hide chr_e13 at left
+                show chr_e11 at left
+                o "{cps=10}ทำไมเย็นจัง{/cps}"
+                hide chr_e11 at left
+                show chr_h1 at right
+                hide chr_h4 at right
+                show chr_a2
+                b "{cps=10}ก็ห้องนี้มีอุณหภูมิในห้อง 16 องศาตามที่เครื่องวัดข้างไงล่ะ{/cps}"
+                show chr_h4 at right
+                hide chr_h1 at right
+                hide chr_a2
+                show chr_a3
+                o "{cps=10}อ่อ ถึงว่าทำไมเย็นขนาดนี้{/cps}"
+                hide chr_h4 at right
+                show chr_e13 at left
+                t "{cps=10}ผมคิดว่ายังไม่ควรให้อุณหภูมิในห้องประมาณนี้ 
+                อย่างน้อยควรลดอุณหภูมิเป็น10-12 องศาซึ่งเป็นอุณหภูมิที่ดีที่สุดในห้องเก็บไวน์ที่เหมาะสมนะครับ{/cps}"
+                hide chr_e13 at left
+                show chr_f12 at left
+                j "{cps=10}อ๋ออย่างนี้นี่เอง แล้วเขาให้คุณเอาไวน์ตรงไหนล่ะครับ{/cps}"
+                hide chr_f12 at left
+                show chr_e13 at left 
+                t "{cps=10}น่าจะ แถว3 ตรงชั้น2ตรงกลางตามที่บอกไว้นะครับ{/cps}"
+                hide chr_e13 at left
+                hide chr_a3
+                c "{cps=10}เห็นอะไรตรงชั้นไวน์{/cps}"
+                jump see

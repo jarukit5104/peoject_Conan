@@ -1,0 +1,107 @@
+        label name1:
+            show chr_a2
+            b "{cps=10}ผมชื่อยาสุโอะ เป็นผู้ช่วยคุณนักสืบ . . . .{/cps}"
+            hide chr_a2
+            show chr_a3
+            c "{cps=10}ผมชื่อ %(c)s เป็นสุดยอดนักสืบในยุคปัจจุบัน{/cps}" 
+            show chr_f12 at left
+            j " {cps=10}ผมชื่อสารวัตรทาเครุ เป็นตำรวจครับ{/cps}"
+            hide chr_f12 at left
+            show chr_f13 at left
+            show chr_a2
+            b "{cps=10}แนะนำตัวเอาเท่านี้ก่อน คนที่อยู่ตรงนี้มีชื่อที่ตรงกับเลขบนไพ่ ทุกคนก็มารวมตัวกันแล้ว 
+            เหลือแค่ คุณจูโคโร่ อาคายุย กับ  คุณคิวจู โดมะ ที่ไม่อยู่ตรงนี้สินะ{/cps}"
+            hide chr_f13 at left
+            hide chr_a2
+            jump run1
+        label name2:
+            show chr_a2
+            b "{cps=10}ผมชื่อยาสุโอะ เป้นผู้ช่วยคุณนักสืบ . . . .{/cps}"
+            hide chr_a2
+            show chr_a3
+            c "{cps=10}ผมชื่อ %(c)s  เป็นสุดยอดนักสืบในยุคปัจจุบัน หรือจะเรียกว่ายอดอัจฉริยะแห่งยุคเลยก็ได้น่ะ ฮ่าฮ่าฮ่า{/cps}"
+            show chr_f12 at left
+            j "{cps=10}เรื่องล้อเล่นเอาไว้แค่นี้เถอะคุณนักสืบ ผมชื่อสารวัตรทาเครุ เป็นตำรวจครับ{/cps}"  
+            hide chr_f12 at left
+            show chr_f13 at left
+            hide chr_a3
+            show chr_a2
+            b "{cps=10} แนะนำตัวเอาเท่านี้ก่อน คนที่อยู่ตรงนี้มีชื่อที่ตรงกับเลขบนไพ่ ทุกคนก็มารวมตัวกันแล้ว 
+            เหลือแค่ คุณจูโคโร่ อาคายุย กับ  คุณคิวจู โดมะ ที่ไม่อยู่ตรงนี้สินะ {/cps}"
+            hide chr_f13 at left
+            hide chr_a2
+            jump run1
+            
+        label run1:
+            show chr_f12 at left
+            j "{cps=10}งั้นที่พวกคุณมารวมตัวกันที่นี้เพราะโดนเชิญมาใช่ไหม{/cps}"
+            m "{cps=10}ใช่ครับ มาจากจดหมายของเลขาของ คุณคิวจู โดมะ ที่ส่งมาให้ผมกับคุณอิจิ โซมะ{/cps}"
+            hide chr_f12 at left
+            show chr_f13 at left
+            show chr_h4 at right 
+            o "{cps=10}ใช่ค่ะ มาจากอีเมล{/cps}"
+            hide chr_f13 at left
+            show chr_i12 at left
+            show chr_h1 at right 
+            hide chr_h4 at right
+            f  "{cps=10}เช่นกันครับ{/cps}"
+            hide chr_i12 at left
+            show chr_i14 at left
+            show chr_b4 at right 
+            hide chr_h1 at right
+            g "{cps=10}ห ห หนูด้วย{/cps}"
+            hide chr_i14 at left
+            show chr_l14 at left
+            hide chr_b4 at right
+            u  "{cps=10}ผมด้วย{/cps}"
+            hide chr_l14 at left
+            show chr_j1 at right 
+            n "{cps=10}เช่นเดียวกัน{/cps}"
+            hide chr_j1 at right
+            show chr_a2
+            b "{cps=10}งั้นก็ไปกันเถอะ เดี๋ยวคุณคิวจู โดมะ รอพวกเรานาน{/cps}"
+            show chr_a3
+            hide chr_a2
+            show chr_f12 at left
+            j  "{cps=10}โอเคไปกันเถอะ{/cps}"
+            hide chr_a3
+            hide chr_f12 at left
+            hide chr_j1 at right
+           
+            scene ocean5
+            "{cps=10}กลุ่มนักสืบและผู้ได้รับเชิญได้เดินทางด้วยกระเช้าลอยฟ้า 
+            สู่อควเรียมที่สร้องอยู่กลางน้ำในมหาสมุทร แ ล้วมาต่อด้วยลงลิฟท์เพื่อลงใต้น้ำในที่นัดหมายไว้{/cps}"
+            show chr_j1 at right
+            n "{cps=10}ถึงแล้ว แล้วคิวจู โดมะ อยู่ไหนล่ะ{/cps}"
+            show chr_j3 at right
+            hide chr_j1 at right
+            show chr_l14 at left
+            u "{cps=10}สงสัยว่าเขาจะมาช้านะ{/cps}"
+            hide chr_j3 at right
+            hide chr_l14 at left
+            show chr_j4 at right
+            n "{cps=10}อุตส่าห์จะรีบมาทำธุระให้จบเร็วๆสักหน่อย{/cps}"
+            hide chr_j4 at right
+            show chr_e11 at left
+            t "{cps=10}ทำไมเหรอมีธุระอื่นเหรอ{/cps}"
+            show chr_j1 at right
+            hide chr_e11 at left
+            n "{cps=10}ก็เกลียดเขาน่ะสิ  เพราะเคยมาเจอรอบนึง ชอบทำสายตาหื่นกามใส่ ก็เลยจะรีบทำธุระให้เสร็จแล้วรีบกลับ{/cps}"
+            hide chr_j1 at right
+            show chr_b4 at right
+            g "{cps=10}ฉันก็ด้วย! เพราะตอนเจอผ่านๆที่ร้านอาหาร สักร้านเขาชอบมองแบบหื่นๆใส่ฉัน{/cps}"
+            hide chr_b4 at right
+            show chr_l14 at left
+            u "{cps=10}โอ้ เขาไม่เหมือนตอนสัมภาษณ์ในทีวีสักนิดเลย{/cps}"
+            show chr_h4 at right
+            hide chr_l14 at left
+            o "{cps=10}เป็นเรื่องจริง มีข่าวลือเกี่ยวกับเขาอยู่ที่เป็นคนบ้าผู้หญิงหลายคน{/cps}"
+            hide chr_h4 at right
+            show chr_a2
+            b "{cps=10}นี่มันแย่มากเลยนะครับ{/cps}"
+            hide chr_a2
+            show chr_a2
+            b"{cps=10}เอาล่ะ หยุดการคุยเล่นกันเอาไว้แค่นี้ก่อน บอกเหตุผลจริงๆ 
+            ที่พวกคุณมากันที่นี้หน่อยสิ คุณนักสืบเริ่มการสืบส่วนกันเลย{/cps}"
+            hide chr_a2
+            jump serr
